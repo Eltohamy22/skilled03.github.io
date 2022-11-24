@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700;800&family=Josefin+Sans:wght@300&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,500&family=Poppins:wght@500;700;800;900&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&family=Six+Caps&display=swap');
+
+body{
+    width: 1440px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans',sans-serif;
+    background-color: var(--light-grey);
+}
+:root{
+    --light-grey: #F2F2F2;
+    --purple: #666CA3;
+    --blue:#13183F;
+    --red: #F74780;
+    --white: #FFFFFF;
+    --pink: #FFA7C3;
+    --grey: #83869A;
+    --linear-1:  linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --linear-2: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+    --linear-3: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+.header{
+    width: 343px;
+    padding: 1rem ;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 89px;
+    height: 35px;
+}
+.btn{
+    background: var(--blue);
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    color: var(--white);
+    font-size: 16px;
+}
+.hero{
+    margin-left: 16px;
+    width: 343px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50.4px;
+}
+p{
+    font-size: 16px;
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 26px;
+}
+.hero-btn{
+    width: 167px;
+    height: 56px;
+    background: var(--linear-1);
+    border: transparent;
+}
+.hero-image{
+    display: flex;
+   justify-content: center;
+    margin-top: 48px; 
+}
+.check-box{
+    background: var(--linear-1);
+    width: 343px;
+    height: 120px;
+    margin-left: 16px;
+    color: var(--white);
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    
+}
+h2{
+    width: 286px;
+    text-align: center;
+}
+.offer{
+   background: var(--white);
+    width: 343px;
+    height: 283px;
+    margin-left: 16px;
+    color: var(--white);
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.offer h3{
+    color: var(--blue);
+    margin-left: 28px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+span{
+    color: var(--red);
+    margin-left: 28px;
+    
+}
+.offer p{
+  font-size: 16px;
+  font-weight: 500;
+  height: 78px;
+  margin-left: 28px;
+  margin-top: 30px;
+  
+}
+  .offer img{
+    margin-left: 20px;
+    margin-top: -24px;
+  }
+@media screen and (min-width: 1170px){
+.header{
+width: 1440px;
+margin-top: 24px;
+}
+.btn{
+    width: 167px;
+    height: 56px;
+    margin-right: 195px;
+    border: transparent;
+}
+.hero{
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+.img{
+    display: none;
+}
+.hero-image{
+    background: url(assets/image-hero-desktop@2x.webp);
+    background-size: 696px;
+    height: 636px;
+    margin-top: -186px;
+    margin-left: 200px;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+.logo{
+    width: 111px;
+    height: 27.68px;
+    margin-left: 165px;
+}
+.hero h1{
+    font-size: 56px;
+    font-weight: 800;
+}
+.info{
+    margin-left: 165px;
+    margin-top: 38px;
+}
+.info p{
+    width: 445px;
+    font-size: 18px;
+}
+/* .btn{
+    width: 213px;
+    height: 54px;
+} */
+.hero-btn{
+    width: 167px;
+    height: 63px;
+}
+.container{
+    width: 1200px;
+    display: grid;
+    margin-left: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 165px;
+}
+.check-box {
+    background: var(--linear-1);
+    width: 343px;
+    height: 283px;
+    color: var(--white);
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.check-box h2{
+    width: 286px;
+    height: 120px;
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 40px;
+    margin-left: 20px;
+}
+.footer{
+    width: 1440;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-between;
+    background: var(--blue);
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.footer .btn{
+    margin-left: 480px;
+    background: var(--linear-2);
+}
+}
