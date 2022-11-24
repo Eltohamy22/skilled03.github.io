@@ -38,6 +38,7 @@ body{
     border-radius: 28px;
     color: var(--white);
     font-size: 16px;
+    border: transparent;
 }
 .hero{
     margin-left: 16px;
@@ -114,15 +115,36 @@ span{
     margin-left: 20px;
     margin-top: -24px;
   }
-@media screen and (min-width: 1170px){
+  .footer {
+      width: 375PX;
+      height: 120px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: space-between;
+      background: var(--blue);
+     margin-left: 16PX;
+  }
+
+  .footer .btn {
+    width: 140px;
+    height: 48px;
+      margin-left: 10px;
+      background: var(--linear-2);
+      margin-top: 30px;
+  }
+  .footer img{
+    margin-top: 30px;
+    margin-left: 16px;
+  }
+@media screen and (min-width: 992px){
 .header{
-width: 1440px;
+width: 1100px;
 margin-top: 24px;
 }
 .btn{
     width: 167px;
     height: 56px;
-    margin-right: 195px;
+    margin-right: 50px;
     border: transparent;
 }
 .hero{
@@ -136,25 +158,25 @@ margin-top: 24px;
 }
 .hero-image{
     background: url(assets/image-hero-desktop@2x.webp);
-    background-size: 696px;
-    height: 636px;
-    margin-top: -186px;
-    margin-left: 200px;
-    /* background-size: cover; */
+    
+    height: 656px;
+    margin-top: -216px;
+    margin-left: -50px;
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 50px;
 }
 .logo{
     width: 111px;
     height: 27.68px;
-    margin-left: 165px;
+    margin-left: 40px;
 }
 .hero h1{
     font-size: 56px;
     font-weight: 800;
 }
 .info{
-    margin-left: 165px;
+    margin-left: 40px;
     margin-top: 38px;
 }
 .info p{
@@ -170,12 +192,12 @@ margin-top: 24px;
     height: 63px;
 }
 .container{
-    width: 1200px;
+    width: 1100px;
     display: grid;
     margin-left: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-left: 165px;
+    gap: 0;
 }
 .check-box {
     background: var(--linear-1);
@@ -184,7 +206,7 @@ margin-top: 24px;
     color: var(--white);
     text-transform: capitalize;
     border-radius: 10px;
-    margin-bottom: 40px;
+   /* padding-left: 20px; */
 }
 .check-box h2{
     width: 286px;
@@ -195,7 +217,7 @@ margin-top: 24px;
     margin-left: 20px;
 }
 .footer{
-    width: 1440;
+    width: 1440px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: space-between;
@@ -207,5 +229,113 @@ margin-top: 24px;
 .footer .btn{
     margin-left: 480px;
     background: var(--linear-2);
+    padding-top: 20px
 }
+.footer img{
+    margin-left: 165px;
+    width: 111px;
+    height: 27.68px;
+    
+}
+
+}
+@media screen and (max-width: 789px) {
+.header {
+        width: 768px;
+        margin-top: 24px;  
+    }
+    .logo{
+        margin-right: 200px;
+    }
+    .btn {
+        width: 167px;
+        height: 56px;
+        margin-right: 40px;
+        border: transparent;
+    }
+    .hero {
+        width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        
+    }
+    .img {
+        display: none;
+    }
+    .hero-image {
+        background: url(assets/image-hero-tablet.webp);
+        background-size: 400px;
+        height: 700px;
+        margin-top: -166px;
+        margin-left: -90px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .logo {
+        width: 111px;
+        height: 27.68px;
+        margin-left: 40px;
+    }
+    .hero h1 {
+        font-size: 40px;
+        font-weight: 800;
+        margin-left: 40px;
+        margin-top: 70px;
+    }
+    .hero p{
+        margin-left: 40px;
+        font-size: 16px;
+        width: 398px;
+    }
+    .hero .btn{
+        margin-left: 40px;
+    }
+        .container {
+            width: 708px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-left: 60px;
+            margin-top: 40px;
+}
+.check-box {
+    background: var(--linear-1);
+    width: 340px;
+    height: 283px;
+    color: var(--white);
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin-left: -10px;
+}
+
+.offer {
+        background: var(--white);
+        width: 340px;
+        height: 283px;
+       
+        color: var(--white);
+        text-transform: capitalize;
+        border-radius: 10px;
+       margin-left: -10px;
+    }
+    .footer{
+        width: 800px;
+        padding-top: 20px;
+        /* margin-left: -20px; */
+    }
+    .footer img{
+        margin-left: 40px;
+    }
+    .footer .btn{
+        margin-left: 180px;
+    }
+    .check-box h2{
+        width: 286px;
+            height: 64px;
+            font-size: 24px;
+            line-height: 32px;
+            padding-top: 60px;
+            margin-left: 20px;
+    }
 }
